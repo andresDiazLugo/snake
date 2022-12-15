@@ -4,7 +4,7 @@ export const initGame =()=>{
     const screenGreen = document.querySelector(".screenGreen")
     const header = document.querySelector(".header4") 
     //creo los elementos 
-    screenGreen?.removeChild(header)
+    // screenGreen?.removeChild(header)
     const containerElement = document.createElement("div")
     const elementAudio = document.createElement("audio")
     const elementSource = document.createElement("source")
