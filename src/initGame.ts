@@ -15,11 +15,12 @@ export const initGame =()=>{
 
     //creo atributos para el elemento audio
     const atributeAutoPLay = document.createAttribute("autoPlay")
-
+    const atributeLoop = document.createAttribute("loop")
 
     //les coloco sus respectivas class o atributos
     containerElement.setAttribute("class","containerIntroGame")
     elementAudio.setAttributeNode(atributeAutoPLay)
+    elementAudio.setAttributeNode(atributeLoop)
     elementSource.setAttribute("src","./src/assets/sonidoIntro.mp3")   
     containerImg.setAttribute("class","containerImg")
     elementImg.setAttribute("class","img")
