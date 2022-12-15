@@ -2,7 +2,7 @@ export const initGame =()=>{
     console.log("ejecutandome")
     
     const screenGreen = document.querySelector(".screenGreen")
-    const header = document.querySelector(".header4") 
+    // const header = document.querySelector(".header4") 
     //creo los elementos 
     // screenGreen?.removeChild(header)
     const containerElement = document.createElement("div")
