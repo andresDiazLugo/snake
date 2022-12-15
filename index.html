@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Sanke Game</title>
+  </head>
+  <body>
+    <div id="app">
+        <div class="containerConsole">
+        <div class="containerHead"></div>
+        <div class="containerScreen">
+            <div class="screenHead">
+                <span></span>
+                <p>DOT MATRIX WITH STEREO SOUND</p>
+                <span></span>
+            </div>
+            <div class="screenGreen">
+              <h4 class="header4"> > snake game 2.0</h4>
+                <!-- <div class="containerIntroGame">
+                   <audio autoplay>
+                    <source  src="./src/assets/sonidoIntro.mp3">
+                  </audio> 
+                  <div class="containerImg">
+                    <img class="img" src="https://i.pinimg.com/originals/47/04/24/470424ded5acade0464f077f007f269b.png">
+                  </div>
+                  <h1>Snake Game 2.0</h1>
+                  <h3>PRESS START</h3>
+                </div> -->
+            </div>
+        </div>
+        <div class="descriptionConsole">
+          <h3 class="h3"><span class="nintendo">Nintendo</span> <span class="game">GAME BOY</span> <span class="tm">TM</span></h3>
+        </div>
+        <div class="containerMando">
+          <div class="containerBtnDirection">
+            <button class="btnUp">.</button>
+            <button class="btnDown">.</button>
+            <button class="btnLeft">.</button>
+            <button class="btnRight">.</button>
+          </div>
+          <div class="containerBtnAB">
+            <button class="btnA">A</button>
+            <button class="btnB">B</button>
+          </div>
+        </div>
+        <div class="containerStartSelect">
+            <div>
+                <button class="btnStart">START</button>
+            </div>
+            <div>
+                <button class="btnSelect">SELECT</button>
+            </div>
+        </div>
+        <div class="sound">
+          <div>
+            <span class="s1"></span>
+            <span class="s2"></span>
+            <span class="s3"></span>
+            <span class="s4"></span>
+            <span class="s5"></span>
+            <span class="s6"></span>
+            <span class="s7"></span>
+            <span class="s8"></span>
+          </div>
+        </div>
+        </div>
+    </div>
+    
+
+    <script type="module" src="./src/snake.ts"></script>
+  </body>
+</html>
