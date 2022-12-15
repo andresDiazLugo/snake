@@ -2,9 +2,9 @@ export const initGame =()=>{
     console.log("ejecutandome")
     
     const screenGreen = document.querySelector(".screenGreen")
-    // const header = document.querySelector(".header4") 
+    const header = document.querySelector(".header4") as Node
     //creo los elementos 
-    // screenGreen?.removeChild(header)
+    screenGreen?.removeChild(header)
     const containerElement = document.createElement("div")
     const elementAudio = document.createElement("audio")
     const elementSource = document.createElement("source")
