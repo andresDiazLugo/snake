@@ -1,7 +1,5 @@
 import sonido from './assets/sonidoIntro.mp3'
-export const initGame =()=>{
-    console.log("ejecutandome")
-    
+export const initGame =()=>{  
     const screenGreen = document.querySelector(".screenGreen")
     const header = document.querySelector(".header4") as Node
     //creo los elementos 
@@ -39,7 +37,5 @@ export const initGame =()=>{
         containerElement.appendChild(elementH1)
         containerElement.appendChild(elementH3)
         screenGreen?.appendChild(containerElement)
-        console.log(screenGreen)
     }
-
 }
