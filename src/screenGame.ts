@@ -4,7 +4,7 @@ export const screenGame = ()=>{
     const containerElement = document.querySelector(".containerIntroGame")
     const screenGreen = document.querySelector(".screenGreen")
     const array = [1,2,3]
-    const subGrid = []
+    // const subGrid = []
     if(containerElement){
         screenGreen?.removeChild(containerElement)
         //creo los elementos 
