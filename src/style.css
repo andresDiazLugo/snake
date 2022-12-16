@@ -10,11 +10,15 @@ section{
 }
 
 .snake{
-  background-color: black;
+  /* background-color: black; */
+  background-image: url("https://1.bp.blogspot.com/-mvwEDR-G5XM/X8G3RkRuKfI/AAAAAAABYxY/dJCw5XuX6YQSuvNuAB3xhsHe7WNKPhpTACLcBGAsYHQ/s0/478446cca2598c79f47296eb3b49391a.jpg");
+  background-size: 100%;
 }
 
 .food{
-  background-color: orange;
+  /* background-image: url("https://static9.depositphotos.com/1642482/1149/i/600/depositphotos_11490598-stock-photo-red-apple-fruit.jpg"); */
+  background-size: 100%;
+  background-color: red;
   border-radius: 50%;
 }
 #app{
