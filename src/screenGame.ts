@@ -12,6 +12,7 @@ export const screenGame = ()=>{
         containerInfoStateSnake.setAttribute("class","containerInfoSnake")
         const parrafoScore = document.createElement("p")
         const elementLives = document.createElement("div")
+        const elementSpan = document.createElement("span")
         const grid = document.createElement("div")
         grid.setAttribute("class","grid")
 
@@ -21,7 +22,9 @@ export const screenGame = ()=>{
 
         elementLives.setAttribute("class","elementLives")
         parrafoScore.setAttribute("class","parrafo")
-        parrafoScore.innerHTML="score : 0"
+        elementSpan.setAttribute("class","contador")
+        parrafoScore.innerHTML="score :"
+        elementSpan.innerHTML="0"
         const elemtsHeartsLivesSnake = array.map(_e=>document.createElement("img"))
         elemtsHeartsLivesSnake.forEach(e=>e.setAttribute("src",imgLives))
         elemtsHeartsLivesSnake.forEach(e=>e.setAttribute("class","heart"))
@@ -31,6 +34,7 @@ export const screenGame = ()=>{
         // });
         
         // agrego elementos a un contenedor padre
+        parrafoScore.appendChild(elementSpan)
         containerInfoStateSnake.appendChild(parrafoScore)
         containerInfoStateSnake.appendChild(elementLives)
         screenGreen?.appendChild(containerInfoStateSnake)
