@@ -11,7 +11,7 @@ export const initGameSnake = ()=>{
     const btnLeft = document.querySelector(".btnLeft")
     const btnRight = document.querySelector(".btnRight")
     const heart = document.querySelectorAll(".heart") 
-    const arraiHeart:Element[]=[]
+    const arraiHeart:any=[] 
     for(let i = 0; i < heart.length; i++){
         arraiHeart.push(heart[i])
     }
@@ -48,10 +48,10 @@ export const initGameSnake = ()=>{
             bodySnake=[55,54,53]
             direction= 1
             soundAuch.play()
-            if(heart.length ===0){
+            elementLives?.removeChild(arraiHeart.pop())
+            if(arraiHeart.length===0){
                 alert("GAME OVER")
             }
-            elementLives?.removeChild(arraiHeart.pop())
 // console.log(Array.isArray(heart))
             // console.log(heart.pop())
         }
