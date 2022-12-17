@@ -116,6 +116,48 @@ box-shadow: 1px 1px 9px 1px rgba(18,18,18,1);
   justify-content: center;
   align-items: center;
 }
+h4{
+  font-size: 0.8rem;
+  font-family: "Press Start 2P";
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  /* -webkit-animation-duration: 0.5s; */
+  /* -o-animation-iteration-count: infinite;
+   */
+   animation-iteration-count:infinite;
+   /* -o-animation-iteration-count: infinite; */
+  animation-duration: 1s;
+  /* -webkit-animation-fill-mode: both; */
+  /* animation-fill-mode: both; */
+  }
+  @-webkit-keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
 section{
   width:12px;
   height:12px;
@@ -430,4 +472,10 @@ box-shadow: inset 5px 4px 238px -98px rgba(18,18,18,0.72);
 .containerIntroGame h3{
   font-size: 0.8rem;
   font-family: "Press Start 2P";
+}
+.gameOver{
+  /* background-color: red; */
+  text-align: center;
+  font-family:"Press Start 2P" ;
+  margin-top: 3rem;
 }

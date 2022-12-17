@@ -3,15 +3,17 @@ export const initGame =()=>{
     const screenGreen = document.querySelector(".screenGreen")
     const header = document.querySelector(".header4") as Node
     //creo los elementos 
-    if(header){
+    if(header ){
         screenGreen?.removeChild(header)
+        
+    
         const containerElement = document.createElement("div")
         const elementAudio = document.createElement("audio")
         const elementSource = document.createElement("source")
         const containerImg = document.createElement("div")
         const elementImg  = document.createElement("img")
         const elementH1  = document.createElement("h1")
-        const elementH3  = document.createElement("h3")
+        const elementH3  = document.createElement("h4")
     
         //creo atributos para el elemento audio
         const atributeAutoPLay = document.createAttribute("autoPlay")

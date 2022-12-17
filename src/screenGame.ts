@@ -1,12 +1,21 @@
 import imgLives from './assets/heart.png'
 import {initGameSnake} from './moveSnake'
+
+
 export const screenGame = ()=>{
     const containerElement = document.querySelector(".containerIntroGame")
     const screenGreen = document.querySelector(".screenGreen")
+    // const elementGameOver:Node = document.querySelector("gameOver")as Node
+
     const array = [1,2,3]
     // const subGrid = []
     if(containerElement){
         screenGreen?.removeChild(containerElement)
+        // if(elementGameOver){
+
+        //     screenGreen?.removeChild(elementGameOver)
+        // }
+        // // screenGreen?.removeChild()
         //creo los elementos 
         const containerInfoStateSnake = document.createElement("div")
         containerInfoStateSnake.setAttribute("class","containerInfoSnake")
